@@ -10,20 +10,70 @@
 <body>
 
     <section class="left-container">
-        <img class="hero-img" src="./image/desert.jpg" >
         <div class="logo-container">
-            <img src="./image/odin-lined.png" height="100%" width="80px">
+            <img src="./image/odin-lined.png" height="70%" width="80px">
             <h1>Odin</h1>
         </div>
+        <p class="credit">Photo by  <em>Sebastiano Corti</em> on <span>Unsplash</span></p>
     </section>
 
     <section class="right-container">
         <div class="top">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
-            <p>You <i>know</i> you want to.</p>
+            <div>
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
+                    Sign up <i>now</i> to get started
+                </p>
+                
+                <p>You <i>know</i> you want to.</p>
+            </div>
+            
         </div>
-        <div class="middle"></div>
-        <div class="bottom"></div>
+        <div class="middle">
+            <section class="form-section">
+                
+                <form action="/my-handling-form-page" method="post">
+                   
+                    <fieldset>
+                        <p>Let's do this!</p>
+                        <ul>
+                            <li>
+                                <label for="firstname">FIRST NAME</label>
+                                <input type="text" id="firstname" name="firstname"> 
+                            </li>
+                            <li>
+                                <label for="lastname">LAST NAME</label>
+                                <input type="text" id="lastname" name="lastname">
+                            </li>
+                            <li>
+                                <label for="mail">EMAIL</label>
+                                <input type="email" id="mail" name="mail" placeholder="myemail@something.com">
+                            </li>
+                            <li>
+                                <label for="tel">PHONE NUMBER</label>
+                                <input type="tel" id="tel" name="tel" placeholder="(+44)">
+                            </li>
+                            <li>
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" name="password"/>
+                            </li>
+                            <li>
+                                <label for="confirm_password">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirm_password" name="confirm_password"/>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </section>
+
+
+        </div>
+        <div class="bottom">
+            <div>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+         
+        </div>
     </section>
    
     
