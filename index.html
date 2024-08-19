@@ -31,7 +31,7 @@
         <div class="middle">
             <section class="form-section">
                 
-                <form action="/my-handling-form-page" method="post">
+                <form action="/my-handling-form-page" method="post" id="sign-up">
                    
                     <fieldset>
                         <p>Let's do this!</p>
@@ -46,7 +46,7 @@
                             </li>
                             <li>
                                 <label for="mail">EMAIL</label>
-                                <input type="email" id="mail" name="mail" placeholder="myemail@something.com">
+                                <input type="email" id="mail" name="mail" placeholder="e.g myemail@gmail.com" required>
                             </li>
                             <li>
                                 <label for="tel">PHONE NUMBER</label>
@@ -54,11 +54,11 @@
                             </li>
                             <li>
                                 <label for="password">PASSWORD</label>
-                                <input type="password" id="password" name="password"/>
+                                <input class="pass" type="password" id="password" name="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
                             </li>
                             <li>
                                 <label for="confirm_password">CONFIRM PASSWORD</label>
-                                <input type="password" id="confirm_password" name="confirm_password"/>
+                                <input class="pass" type="password" id="confirm_password" name="confirm_password" required/>
                             </li>
                         </ul>
                     </fieldset>
@@ -69,8 +69,8 @@
         </div>
         <div class="bottom">
             <div>
-                <button type="submit">Create Account</button>
-                <p>Already have an account? <a href="#">Log in</a></p>
+                <button type="submit" form="sign-up">Create Account</button>
+                <p>Already have an account? <a id="login" href="#">Log in</a></p>
             </div>
          
         </div>
